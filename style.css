@@ -1,6 +1,120 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    padding: 20px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#F2F2F2;
+    color:#0D0D0D;
+}
+
+/* Navigation */
+
+nav{
+    background:#0D0D0D;
+    color:#F2F2F2;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 40px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:#F2F2F2;
+    text-decoration:none;
+}
+
+/* Hero */
+
+.hero{
+    height:80vh;
+
+    background:
+    linear-gradient(
+        rgba(13,13,13,0.6),
+        rgba(13,13,13,0.6)
+    ),
+    url("vr.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    padding-left:60px;
+}
+
+.hero-text{
+    color:#F2F2F2;
+    max-width:500px;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    margin-bottom:20px;
+}
+
+.button{
+    background:#73030D;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.button:hover{
+    background:#1F0B73;
+}
+
+/* Information */
+
+.info{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.info h2{
+    color:#1F0B73;
+    margin-bottom:20px;
+}
+
+/* Footer */
+
+footer{
+    background:#0D0D0D;
+    color:#F2F2F2;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero{
+        padding:20px;
+    }
+
+    .hero-text h1{
+        font-size:2rem;
+    }
 }
